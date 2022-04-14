@@ -1,0 +1,46 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414134731",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "commande",
+  "fields": [
+    {
+      "fieldName": "adresseLivraison",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "echeance",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Commande",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "paiement",
+      "otherEntityRelationshipName": "commande",
+      "ownerSide": false,
+      "relationshipName": "paiement",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "livreur",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "livreur",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

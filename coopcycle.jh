@@ -1,18 +1,18 @@
 entity Client {
     nom String required pattern(/^[A-Z][a-z]+$/) maxlength(30)
     prenom String required pattern(/^[A-Z][a-z]+$/) maxlength(30)
-    mail String pattern(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)
+    mail String
     tel String
     addresse String required maxlength(100)
 }
 
 entity Panier {
-    montant Integer required min(0)
+    montant Float required min(0)
     dateLimite Float required
 }
 
 entity Paiement {
-	montant Integer required min(0)
+	montant Float required min(0)
 }
 
 entity Livreur {
@@ -22,7 +22,6 @@ entity Livreur {
 }
 
 entity Cooperative {
-	id Integer required,
     nom String required,
     directeur String
 }

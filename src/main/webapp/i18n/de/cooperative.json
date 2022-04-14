@@ -1,0 +1,27 @@
+{
+  "coopcycleApp": {
+    "cooperative": {
+      "home": {
+        "title": "Cooperatives",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Cooperative erstellen",
+        "createOrEditLabel": "Cooperative erstellen oder bearbeiten",
+        "search": "Suche nach Cooperative",
+        "notFound": "Keine Cooperatives gefunden"
+      },
+      "created": "Cooperative erstellt mit ID {{ param }}",
+      "updated": "Cooperative aktualisiert mit ID {{ param }}",
+      "deleted": "Cooperative gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Cooperative {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Cooperative"
+      },
+      "id": "ID",
+      "nom": "Nom",
+      "directeur": "Directeur",
+      "livreur": "Livreur"
+    }
+  }
+}

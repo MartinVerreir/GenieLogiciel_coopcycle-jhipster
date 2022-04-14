@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414134726",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "panier",
+  "fields": [
+    {
+      "fieldName": "montant",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "dateLimite",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Panier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "paiement",
+      "otherEntityRelationshipName": "panier",
+      "ownerSide": true,
+      "relationshipName": "paiement",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "panier",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "commercant",
+      "otherEntityRelationshipName": "panier",
+      "relationshipName": "commercant",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

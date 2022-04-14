@@ -1,0 +1,29 @@
+{
+  "coopcycleApp": {
+    "commande": {
+      "home": {
+        "title": "Commandes",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Commande erstellen",
+        "createOrEditLabel": "Commande erstellen oder bearbeiten",
+        "search": "Suche nach Commande",
+        "notFound": "Keine Commandes gefunden"
+      },
+      "created": "Commande erstellt mit ID {{ param }}",
+      "updated": "Commande aktualisiert mit ID {{ param }}",
+      "deleted": "Commande gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Commande {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Commande"
+      },
+      "id": "ID",
+      "adresseLivraison": "Adresse Livraison",
+      "echeance": "Echeance",
+      "paiement": "Paiement",
+      "livreur": "Livreur",
+      "client": "Client"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220414134729",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "cooperative",
+  "fields": [
+    {
+      "fieldName": "nom",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "directeur",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cooperative",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "livreur",
+      "otherEntityRelationshipName": "cooperative",
+      "relationshipName": "livreur",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

@@ -1,0 +1,27 @@
+{
+  "coopcycleApp": {
+    "paiement": {
+      "home": {
+        "title": "Paiements",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Paiement",
+        "createOrEditLabel": "Crear o editar Paiement",
+        "search": "Buscar Paiement",
+        "notFound": "Ningún Paiements encontrado"
+      },
+      "created": "Un nuevo Paiement ha sido creado con el identificador {{ param }}",
+      "updated": "Un Paiement ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Paiement ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Paiement {{ id }}?"
+      },
+      "detail": {
+        "title": "Paiement"
+      },
+      "id": "ID",
+      "montant": "Montant",
+      "commande": "Commande",
+      "panier": "Panier"
+    }
+  }
+}
